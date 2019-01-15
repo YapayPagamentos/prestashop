@@ -18,7 +18,7 @@
 * versions in the future. If you wish to customize PrestaShop for your
 * needs please refer to http://www.prestashop.com for more information.
 *
-*  @author Igor Cicotoste <ifredi@tray.net.br>
+*  @author Yapay <integracao@yapay.com.br>
 *  @copyright  Yapay
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
@@ -37,7 +37,7 @@ class traycheckout extends PaymentModule
         $this->tab 				= 'payments_gateways';
         $this->version 			= '1.0';
 
-		$this->author 			= 'Ifredi';
+		$this->author 			= 'Yapay';
         $this->currencies 		= true;
         $this->currencies_mode 	= 'checkbox';
 
@@ -387,7 +387,9 @@ class traycheckout extends PaymentModule
 			'url_notification' => $url_notification,
 			'url_success' => Tools::htmlentitiesUTF8($url_success),
 			'url_process' => Tools::htmlentitiesUTF8($url_process),
-			'free' => "PRESTASHOP_v1.0"
+			'free' => "PRESTASHOP_v2.0",
+			'max_split_transaction' => "6",
+			'available_payment_methods' => "2, 3, 4, 5, 15, 16, 18, 19, 20, 25, 6"
 		));
 		
 		return $this->display(__file__, 'form_post.tpl');

@@ -17,14 +17,16 @@
 * versions in the future. If you wish to customize PrestaShop for your
 * needs please refer to http://www.prestashop.com for more information.
 *
-*  @author Igor Cicotoste <ifredi@tray.net.br>
-*  @copyright  TrayCheckout
+*  @author Yapay <integracao@yapay.com.br>
+*  @copyright  Yapay
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
 	<input id="token_account" name="token_account" value="{$token_account}" type="hidden"/>
 	<input id="free" name="free" value="{$free}" type="hidden"/>
+	<input id="available_payment_methods" name="available_payment_methods" value="{$available_payment_methods}" type="hidden"/>
+	<input id="max_split_transaction" name="max_split_transaction" value="{$max_split_transaction}" type="hidden"/>
 	<input id="order_number" name="order_number" value="{$order_number}" type="hidden"/>
 	<input id="customer[name]" name="customer[name]" value="{$customer['name']}" type="hidden"/>
 	<input id="customer[addresses][][postal_code]" name="customer[addresses][][postal_code]" value="{$customer['addresses']['postal_code']}" type="hidden"/>

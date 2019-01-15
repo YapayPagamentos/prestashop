@@ -17,7 +17,7 @@
 * versions in the future. If you wish to customize PrestaShop for your
 * needs please refer to http://www.prestashop.com for more information.
 *
-*  @author Igor Cicotoste <ifredi@tray.net.br>
+*  @author Yapay <integracao@yapay.com.br>
 *  @copyright  Yapay
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
@@ -51,7 +51,7 @@
 <h3>{l s='Pagamento via Yapay Intermediador' mod='traycheckout'}</h3>
 <form action="{$link->getModuleLink('traycheckout', 'validation', [], true)}" method="post">
 	<p>
-		<img src="http://ifredi.commerce.dev.tray.intranet/prestashop/modules/traycheckout/imagens/comprar_traycheckout.png" alt="{l s='traycheckout' mod='traycheckout'}"  style="float:left; margin: 0px 10px 5px 0px;" />
+		<img src="checkout.png" alt="{l s='traycheckout' mod='traycheckout'}"  style="float:left; margin: 0px 10px 5px 0px;" />
 		{l s='Você escolheu efetuar o pagamento via Yapay Intermediador' mod='traycheckout'}
 		<br/><br />
 		{l s='Breve resumo da sua compra:' mod='traycheckout'}

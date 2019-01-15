@@ -4,7 +4,7 @@
 	<displayName><![CDATA[Yapay Intermediador]]></displayName>
 	<version><![CDATA[1.0]]></version>
 	<description><![CDATA[Aceitar pagamentos via Yapay Intermediador]]></description>
-	<author><![CDATA[Ifredi]]></author>
+	<author><![CDATA[Yapay]]></author>
 	<tab><![CDATA[payments_gateways]]></tab>
 	<confirmUninstall>Tem certeza de que pretende eliminar os seus dados?
 	</confirmUninstall>
