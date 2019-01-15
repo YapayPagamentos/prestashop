@@ -8,10 +8,10 @@ Fique atento que sua versão de instalação, a plataforma Prestashop deve ser c
 > 1- Instalação do Módulo Prestashop
 
 
-Para instalar módulo é necessário baixar ou clonar esse repositório do Git.
+Para instalar módulo é necessário baixar ou clonar esse repositório do Git. 
 
 
-Descompacte o arquivo baixado e copie a pasta para o diretório de módulos da sua instalação PrestaShop.
+Descompacte o arquivo **yapay_prestashop.zip** e copie a pasta para o diretório de módulos da sua instalação PrestaShop.
 
 Passos para instalação via FTP, utilizando o Filezilla:
 
@@ -23,17 +23,17 @@ Passos para instalação via FTP, utilizando o Filezilla:
 
 Cuidado para não arrastar em cima de uma pasta, se isso acontecer você terá uma pasta dentro da outra e então este módulo não funcionará.
 
-![PrestaShop, instalação](/images/install_prestashop_1.png "PrestaShop, instalação")
+![PrestaShop, instalação](https://intermediador.dev.yapay.com.br/images/prestashop/install_prestashop_1.png "PrestaShop, instalação")
 
 Após a conclusão do envio do módulo Yapay, acessar a administração do PrestaShop e entrar na seção de **“Módulos”**.
 
 Na opção de busca, digitar Yapay e selecionar o módulo que já deverá estar listado na consulta:
 
-![PrestaShop, instalação](/images/install_prestashop_2.png "PrestaShop, instalação")
+![PrestaShop, instalação](https://intermediador.dev.yapay.com.br/images/prestashop/install_prestashop_2.png "PrestaShop, instalação")
 
 Será mostrado o módulo conforme a imagem abaixo. Clicar no botão install ou instalar (caso sua loja já esteja traduzida) no lado direito da listagem:
 
-![PrestaShop, instalação](/images/install_prestashop_3.png "PrestaShop, instalação")
+![PrestaShop, instalação](https://intermediador.dev.yapay.com.br/images/prestashop/install_prestashop_3.png "PrestaShop, instalação")
 
 Será necessário inserir dados de cadastro de sua conta para liberar os pagamentos em sua conta Yapay.
 
@@ -44,7 +44,7 @@ Na página de módulos, clique em **Configure (Configuração)** para acessar o 
 
 Será carregada a página do módulo com as opções de configuração abaixo:
 
-![PrestaShop, instalação](/images/install_prestashop_4.png "PrestaShop, instalação")
+![PrestaShop, instalação](https://intermediador.dev.yapay.com.br/images/prestashop/install_prestashop_4.png "PrestaShop, instalação")
 
 
 > Opções de configuração Tray Checkout:
