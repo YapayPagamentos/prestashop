@@ -238,7 +238,7 @@ class traycheckout extends PaymentModule
 			'prefixo_pedido'=>$this->l('Prefixo pedido'),
 			'atencao_ativar_teste'=>'ATENÇÃO AO ATIVAR O MODO TESTE',
 			'msg1_ativar_teste'=>'Você ainda não poderá aceitar pagamentos',
-			'msg2_ativar_teste'=>'Será necessário criar uma conta no site sandbox Yapay Intermediador (https://sandbox.traycheckout.com.br/)',
+			'msg2_ativar_teste'=>'Será necessário criar uma conta no site sandbox Yapay Intermediador. Entre em contato via e-mail integracao@yapay.com.br',
 			'msg3_ativar_teste'=>'Será necessário voltar à página do módulo Yapay Intermediador para configurar com os dados corretos antes de colocar no ar',
 			'ativar_teste'=>$this->l('Ativar Teste (Sandbox)'),
 			'ativar_redirect'=>$this->l('Ativar Yapay Intermediador via Redirect'),
@@ -404,7 +404,7 @@ class traycheckout extends PaymentModule
  
 		$total_paid			= number_format( Tools::convertPrice( $DadosOrder->total_paid, $currency), 2, '.', '');
 		if ((int)Configuration::get('traycheckout_SANDBOX') == 1)
-			$post_url = 'https://checkout.sandbox.tray.com.br/payment/transaction';
+			$post_url = 'http://tc.intermediador.sandbox.yapay.com.br/payment/transaction';
 		else
 			$post_url = 'https://checkout.tray.com.br/payment/transaction';
 			

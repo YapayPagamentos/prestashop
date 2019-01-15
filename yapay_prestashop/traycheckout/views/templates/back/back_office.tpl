@@ -22,7 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<img src="../modules/traycheckout/imagens/traycheckout.png" style="float:left; margin-right:15px;" width="250" heigth="250" />
+<img src="../modules/traycheckout/imagens/yapay.png" style="float:left; margin-right:15px;" width="250" heigth="250" />
 		<b>{$arrContent['msg_aceite_traycheckout']}.</b><br /><br />
 		{$arrContent['msg_cliente_escolher_traycheckout']}.<br />
 		{$arrContent['msg_configurar_email']}.
