@@ -52,6 +52,6 @@
 	<input id="shipping_price" name="shipping_price" value="{$shipping_price}" type="hidden"/>
 	<input id="total_paid" name="total_paid" value="{$total_paid}" type="hidden"/>
 	<input id="url_notification" name="url_notification" value="{$url_notification}" type="hidden"/>
-	<input id="url_success" name="url_success" value="{$url_success}" type="hidden"/>
-	<input id="url_process" name="url_process" value="{$url_process}" type="hidden"/>
+	<!-- <input id="url_success" name="url_success" value="{$url_success}" type="hidden"/> -->
+	<!-- <input id="url_process" name="url_process" value="{$url_process}" type="hidden"/> -->
 

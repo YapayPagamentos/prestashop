@@ -387,7 +387,7 @@ class traycheckout extends PaymentModule
 			'url_notification' => $url_notification,
 			'url_success' => Tools::htmlentitiesUTF8($url_success),
 			'url_process' => Tools::htmlentitiesUTF8($url_process),
-			'free' => "PRESTASHOP_v2.0",
+			'free' => "PRESTASHOP_v2.1",
 			'max_split_transaction' => "6",
 			'available_payment_methods' => "2, 3, 4, 5, 15, 16, 18, 19, 20, 25, 6"
 		));
