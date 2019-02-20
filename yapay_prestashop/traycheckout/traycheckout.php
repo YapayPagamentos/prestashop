@@ -372,8 +372,7 @@ class traycheckout extends PaymentModule
 		$prefixo = Configuration::get ( 'traycheckout_PREFIXO' );
 		
 		$url_return = Tools::getShopDomainSsl(true, true).__PS_BASE_URI__. '?fc=module&module=traycheckout&controller=return&id_order='.$order_number;
-		$url_success =  $url_return.'&action=sucess';
-		$url_process =  $url_return.'&action=process';	
+		
 		$this->smarty->assign(array(
 			'order_number' 		=> $prefixo . $order_number,
 			'token_account' => Configuration::get('traycheckout_TOKEN'),
@@ -385,8 +384,6 @@ class traycheckout extends PaymentModule
 			'shipping_type' 	=> $shipping_type,		
 			'total_paid' 	=> $total_paid,
 			'url_notification' => $url_notification,
-			'url_success' => Tools::htmlentitiesUTF8($url_success),
-			'url_process' => Tools::htmlentitiesUTF8($url_process),
 			'free' => "PRESTASHOP_v2.1",
 			'max_split_transaction' => "6",
 			'available_payment_methods' => "2, 3, 4, 5, 15, 16, 18, 19, 20, 25, 6"
