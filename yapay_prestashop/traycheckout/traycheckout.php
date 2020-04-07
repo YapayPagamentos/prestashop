@@ -384,7 +384,7 @@ class traycheckout extends PaymentModule
 			'shipping_type' 	=> $shipping_type,		
 			'total_paid' 	=> $total_paid,
 			'url_notification' => $url_notification,
-			'free' => "PRESTASHOP_v2.2",
+			'free' => "PRESTASHOP_v2.3",
 			'available_payment_methods' => "2, 3, 4, 5, 15, 16, 18, 19, 20, 25, 6"
 		));
 		
