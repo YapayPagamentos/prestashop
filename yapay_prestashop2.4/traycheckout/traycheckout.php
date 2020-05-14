@@ -35,7 +35,7 @@ class traycheckout extends PaymentModule
     	
         $this->name 			= 'traycheckout';
         $this->tab 				= 'payments_gateways';
-        $this->version 			= '1.0';
+        $this->version 			= '2.4';
 
 		$this->author 			= 'Yapay';
         $this->currencies 		= true;
@@ -373,6 +373,8 @@ class traycheckout extends PaymentModule
 		
 		$url_return = Tools::getShopDomainSsl(true, true).__PS_BASE_URI__. '?fc=module&module=traycheckout&controller=return&id_order='.$order_number;
 		
+		$url_process =  $url_return.'&action=process';
+
 		$this->smarty->assign(array(
 			'order_number' 		=> $prefixo . $order_number,
 			'token_account' => Configuration::get('traycheckout_TOKEN'),
@@ -384,7 +386,8 @@ class traycheckout extends PaymentModule
 			'shipping_type' 	=> $shipping_type,		
 			'total_paid' 	=> $total_paid,
 			'url_notification' => $url_notification,
-			'free' => "PRESTASHOP_v2.3",
+			'url_process' => Tools::htmlentitiesUTF8($url_process),
+			'free' => "PRESTASHOP_v2.4",
 			'available_payment_methods' => "2, 3, 4, 5, 15, 16, 18, 19, 20, 25, 6"
 		));
 		
@@ -400,7 +403,10 @@ class traycheckout extends PaymentModule
 
 		$DadosOrder 		= new Order($order_number);
  
+		$currency 			= new Currency($DadosOrder->id_currency);
+
 		$total_paid			= number_format( Tools::convertPrice( $DadosOrder->total_paid, $currency), 2, '.', '');
+
 		if ((int)Configuration::get('traycheckout_SANDBOX') == 1)
 			$post_url = 'http://tc.intermediador.sandbox.yapay.com.br/payment/transaction';
 		else

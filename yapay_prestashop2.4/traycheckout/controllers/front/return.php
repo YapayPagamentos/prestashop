@@ -66,6 +66,7 @@ class TrayCheckoutReturnModuleFrontController extends ModuleFrontController{
 	
 	private function curPageURL() {
 		$pageURL = 'http';
+
 		if ($_SERVER ["HTTPS"] == "on") {
 			$pageURL .= "s";
 		}

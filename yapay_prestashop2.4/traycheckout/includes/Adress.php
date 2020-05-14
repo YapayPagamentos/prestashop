@@ -44,6 +44,7 @@ class Adress
           list($street, $completion) = $this->partCompletion($adress);
         } else {
           $splited = preg_split('/[-,]/', $adress);
+
           if (in_array(sizeof($splited), array(2, 3))) { 
             list($street, $number, $completion) = $splited;
           } else {

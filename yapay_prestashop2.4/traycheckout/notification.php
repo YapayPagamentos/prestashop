@@ -44,12 +44,12 @@ class TrayCheckoutNotifier extends traycheckout
 	{
 		$token = Configuration::get ( 'traycheckout_TOKEN' );
 		$prefixo = Configuration::get ( 'traycheckout_PREFIXO' );
-	
+
 		$order_number_conf = utf8_encode ( str_replace ( $prefixo, '', $_POST ['transaction'] ['order_number'] ) );
 		$transaction_token = $_POST ['transaction'] ['transaction_token'];
 
 		$transaction = $this->getResult($transaction_token);
-
+	
 		$order_number = str_replace ( $prefixo, '', $transaction ['order_number'] );
 		if ($order_number != $order_number_conf) {
 			$this->httpError ("Pedido: $order_number_conf não corresponte com a pedido consultado: $order_number!");
@@ -159,20 +159,22 @@ class TrayCheckoutNotifier extends traycheckout
 		} 
 		curl_close($ch);
 		$arrResponse = json_decode ( $res, TRUE );
+
 		return $arrResponse['data_response'] ['transaction'];
 	}
 	
 	private function getUrl(){
 		if ((int)Configuration::get('traycheckout_SANDBOX') == 1)
-			$urlPost = 'https://api.sandbox.checkout.tray.com.br/api/v1/transactions/get_by_token';
+			$urlPost = 'https://api.intermediador.sandbox.yapay.com.br/api/v1/transactions/get_by_token';
 		else
-			$urlPost = 'https://api.checkout.tray.com.br/api/v1/transactions/get_by_token';
+			$urlPost = 'https://api.intermediador.yapay.com.br/api/v1/transactions/get_by_token';
 		
 		return $urlPost;
 	}
 }
 
 if ($_POST) {		
+	$result = $_POST;
 	$notifier = new TrayCheckoutNotifier();
 	$notifier->confirmOrder($result);
 } else {

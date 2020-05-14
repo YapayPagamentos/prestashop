@@ -26,7 +26,6 @@
 	<input id="token_account" name="token_account" value="{$token_account}" type="hidden"/>
 	<input id="free" name="free" value="{$free}" type="hidden"/>
 	<input id="available_payment_methods" name="available_payment_methods" value="{$available_payment_methods}" type="hidden"/>
-	<input id="max_split_transaction" name="max_split_transaction" value="{$max_split_transaction}" type="hidden"/>
 	<input id="order_number" name="order_number" value="{$order_number}" type="hidden"/>
 	<input id="customer[name]" name="customer[name]" value="{$customer['name']}" type="hidden"/>
 	<input id="customer[addresses][][postal_code]" name="customer[addresses][][postal_code]" value="{$customer['addresses']['postal_code']}" type="hidden"/>
@@ -52,5 +51,6 @@
 	<input id="shipping_price" name="shipping_price" value="{$shipping_price}" type="hidden"/>
 	<input id="total_paid" name="total_paid" value="{$total_paid}" type="hidden"/>
 	<input id="url_notification" name="url_notification" value="{$url_notification}" type="hidden"/>
+	<input id="url_process" name="url_process" value="{$url_process}" type="hidden"/>
 
 
