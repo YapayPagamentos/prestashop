@@ -387,7 +387,7 @@ class traycheckout extends PaymentModule
 			'total_paid' 	=> $total_paid,
 			'url_notification' => $url_notification,
 			'url_process' => Tools::htmlentitiesUTF8($url_process),
-			'free' => "PRESTASHOP_v2.4",
+			'free' => "PRESTASHOP_v2.5",
 			'available_payment_methods' => "2, 3, 4, 5, 15, 16, 18, 19, 20, 25, 6"
 		));
 		
@@ -410,7 +410,7 @@ class traycheckout extends PaymentModule
 		if ((int)Configuration::get('traycheckout_SANDBOX') == 1)
 			$post_url = 'http://tc.intermediador.sandbox.yapay.com.br/payment/transaction';
 		else
-			$post_url = 'https://checkout.tray.com.br/payment/transaction';
+			$post_url = 'https://tc.intermediador.yapay.com.br/payment/transaction';
 			
 		$this->smarty->assign(array(
 			'status' 		=> 'ok', 

@@ -54,7 +54,7 @@ class TrayCheckoutSubmitModuleFrontController extends ModuleFrontController
 		if ((int)Configuration::get('traycheckout_SANDBOX') == 1)
 			$post_url = 'http://tc.intermediador.sandbox.yapay.com.br/payment/transaction';
 		else
-			$post_url = 'https://checkout.tray.com.br/payment/transaction';
+			$post_url = 'https://tc.intermediador.yapay.com.br/payment/transaction';
 
 		$this->context->smarty->assign(array(
 			'status' 		=> 'ok', 
